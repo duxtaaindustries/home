@@ -453,3 +453,10 @@ header, footer, #scroll-animate-main {
         transform: translateY(-550%);
     }
 }
+
+@media (max-width: 300px) {
+    .header_name_asd {
+        font-size: 25px;
+        height: 20px;
+    }
+}
