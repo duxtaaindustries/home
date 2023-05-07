@@ -27,7 +27,6 @@ https://codepen.io/hudsonmarinho/pen/kMxPRa */
 
 header {
     width: 100%;
-    max-height: 1000px;
     background: linear-gradient(288deg, #202020, #343434);
     top: 0;
     position: fixed;
@@ -58,7 +57,7 @@ footer {
 }
 
 
-.header_name_asd {
+.header-h1 {
     width: 100%; 
     height: 60px;
     padding: 0;
@@ -73,7 +72,7 @@ footer {
 }
 
 
-.header_under_poh {
+.header-h3 {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -137,7 +136,7 @@ footer {
     justify-content: space-evenly;
 }
 
-.stytsko_div {
+.cards-div {
     width: 500px;
     height: 700px;
 
@@ -147,7 +146,7 @@ footer {
     border-radius: 20px;
 }
 
-.stysko_h1 {
+.cards-h1 {
     height: 40px;
 
     font-family: 'Raleway';
@@ -165,7 +164,7 @@ footer {
 
 }
 
-.stytsko_about {
+.cards-about {
     width: 460px;
 
     font-family: 'Montserrat';
@@ -183,7 +182,43 @@ footer {
     color: #FFFFFF;
 }
 
-.more {
+.jarvis_about {
+    width: 460px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: translateY(40%);
+
+    color: #FFFFFF;
+}
+
+.more-jarvis {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 49px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #00FFE0;
+
+    margin-left: 83%;
+    margin-top: 44%;
+}
+
+.more-stytsko {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -242,13 +277,39 @@ header, footer, #scroll-animate-main {
 }
 
 
+@media (max-width: 1100px) {
+    .cards-div {
+        width: 450px; 
+        height: 600px;
+    }
+
+    .cards-about {
+        width: 90%;
+        font-size: 27px;
+        transform: translateY(25%);
+    }
+
+    .more-stytsko {
+        margin-top: 25%;
+    }
+
+    .more-jarvis {
+        margin-top: 32.5%;
+    }
+
+    .content {
+        height: 800px;
+        min-height: 800px;
+    }
+}
+
 @media (max-width: 1000px) {
-    .header_name_asd {
+    .header-h1 {
         font-size: 70px;
         height: 50px;
     }
 
-    .header_under_poh {
+    .header-h3 {
         font-size: 20px;
     }
 
@@ -272,21 +333,38 @@ header, footer, #scroll-animate-main {
     }
 }
 
+@media (max-width: 990px) {
+    .card-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards-div {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content {
+        height: 1550px;
+        min-height: 1550px;
+    }
+}
+
 @media (max-width: 770px) {
-    .header_name_asd {
+    .header-h1 {
         font-size: 50px;
         height: 35px;
     }
 
-    .header_under_poh {
+    .header-h3 {
         font-size: 15px;
     }
 
-    .stysko_h1 {
+    .cards-h1 {
         font-size: 60px;
     }
 
-    .stytsko_about {
+    .cards-about {
         width: 90%;
 
         font-size: 20px;
@@ -294,7 +372,11 @@ header, footer, #scroll-animate-main {
         margin-top: 40px;
     }
 
-    .stytsko_div {
+    .jarvis_about {
+        transform: translateY(50%);
+    }
+
+    .cards-div {
         width: 350px;
         height: 490px;
 
@@ -302,15 +384,21 @@ header, footer, #scroll-animate-main {
         border-radius: 20px;
     }
 
-    .more {
+    .more-stytsko {
         width: 100px;
         margin-left: 78%;
         margin-top: 33%;
     }
 
+    .more-jarvis {
+        width: 120px;
+        margin-top: 47%;
+        margin-left: 77%;
+    }
+
     .content {
-        height: 620px;
-        min-height: 630px;
+        height: 1200px;
+        min-height: 1200px;
     }
 
     footer {
@@ -330,20 +418,20 @@ header, footer, #scroll-animate-main {
 }
 
 @media (max-width: 540px) {
-    .header_name_asd {
+    .header-h1 {
         font-size: 40px;
         height: 25px;
     }
 
-    .header_under_poh {
+    .header-h3 {
         font-size: 12px;
     }
 
-    .stysko_h1 {
+    .cards-h1 {
         font-size: 50px;
     }
 
-    .stytsko_about {
+    .cards-about {
         width: 90%;
 
         font-size: 15px;
@@ -351,7 +439,7 @@ header, footer, #scroll-animate-main {
         margin-top: 75px;
     }
 
-    .stytsko_div {
+    .cards-div {
         width: 280px;
         height: 410px;
 
@@ -359,11 +447,21 @@ header, footer, #scroll-animate-main {
         border-radius: 20px;
     }
 
-    .more {
+    .more-stytsko {
         width: 100px;
         margin-left: 77%;
         margin-top: 31.5%;
         font-size: 12px;
+    }
+
+    .jarvis_about {
+        transform: translateY(35%);
+    }
+
+    .more-jarvis {
+        width: 120px;
+        margin-top: 39%;
+        margin-left: 71%;
     }
 
     .pp {
@@ -373,26 +471,26 @@ header, footer, #scroll-animate-main {
     }
 
     .content {
-        height: 500px;
-        min-height: 500px;
+        height: 980px;
+        min-height: 980px;
     }
 }
 
 @media (max-width: 430px) {
-    .header_name_asd {
+    .header-h1 {
         font-size: 30px;
         height: 20px;
     }
 
-    .header_under_poh {
+    .header-h3 {
         font-size: 10px;
     }
 
-    .stysko_h1 {
+    .cards-h1 {
         font-size: 40px;
     }
 
-    .stytsko_about {
+    .cards-about {
         width: 90%;
 
         font-size: 12px;
@@ -400,7 +498,7 @@ header, footer, #scroll-animate-main {
         margin-top: 75px;
     }
 
-    .stytsko_div {
+    .cards-div {
         width: 230px;
         height: 360px;
 
@@ -408,10 +506,17 @@ header, footer, #scroll-animate-main {
         border-radius: 20px;
     }
 
-    .more {
+    .more-stytsko {
         width: 100px;
         margin-left: 72%;
         margin-top: 27%;
+        font-size: 12px;
+    }
+
+    .more-jarvis {
+        width: 100px;
+        margin-left: 72%;
+        margin-top: 37%;
         font-size: 12px;
     }
 
@@ -422,8 +527,8 @@ header, footer, #scroll-animate-main {
     }
 
     .content {
-        height: 460px;
-        min-height: 460px;
+        height: 850px;
+        min-height: 850px;
     }
 
     footer {
